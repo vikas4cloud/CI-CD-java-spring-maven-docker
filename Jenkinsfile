@@ -37,8 +37,8 @@ node {
 	
 }
     stage('Docker push'){
-        
-        sh "docker tag f4a8a81bd129    vickeyyvickey/myapplication" //must change the name and tag no
+       // docker images | awk '{print $3}' | awk 'NR==2'
+        sh "docker tag 'docker images | awk '{print $3}' | awk 'NR==2' vickeyyvickey/myapplication" //must change the name and tag no
         sh "docker push   vickeyyvickey/myapplication"
   }
 }
