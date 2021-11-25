@@ -36,9 +36,9 @@ node {
         sh "docker login -u vickeyyvickey -p Hello@123"
 	
 }
- //   stage('Docker push'){
+    stage('Docker push'){
         
-//        sh "docker tag 5b21534e2a2d   vickeyyvickey/myapplication" //must change the name and tag no
- //       sh "docker push   vickeyyvickey/myapplication"
-//  }
+        sh "docker tag f4a8a81bd129    vickeyyvickey/myapplication" //must change the name and tag no
+        sh "docker push   vickeyyvickey/myapplication"
+  }
 }
