@@ -34,7 +34,7 @@ node {
 	  
         sh "docker images"
    //     sh "docker login -u vikas4cloud -p "
-	  sh "docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+	//  sh "docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
 }
  //   stage('Docker push'){
         
